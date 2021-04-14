@@ -1,0 +1,446 @@
+
+body {
+	font-family: sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* -------- CSS ( header.php ) -------- */
+
+
+header {
+	position: relative;
+	background: #424862;
+	height: 210px;
+}
+
+
+.blocHeader {
+	display: flex;
+	justify-content: space-around;
+}
+
+.websiteTitle {
+	width: 300px;
+	text-align: center;
+	padding: 10px 40px;
+	margin-top: 30px;
+	font-size: 3em;
+	border-radius: 4px;
+	color: white;
+}
+
+.blocHeader nav {
+	display: flex;
+	margin-top: 20px;
+	width: 30%;
+	justify-content: space-between;
+}
+
+.blocHeader nav .accueil, .blocHeader nav .rechercheAvancee, .blocHeader nav .contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all linear 400ms;
+}
+
+.blocHeader nav .accueil {
+	height: 36px;
+	border: 3px solid #FB9A63;
+	width: 38%;
+	color: #424862;
+	margin: 0px;
+	background: white;
+	font-size: 0.9em;
+	padding: 4px 0px;
+	font-size: 1em;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.blocHeader nav .rechercheAvancee, .blocHeader nav .contact {
+	cursor: pointer;
+	text-align: center;
+	height: 36px;
+	border: 3px solid #FB9A63;
+	width: 56%;
+	text-decoration: none;
+	color: #424862;
+	font-weight: bold;
+	background: white;
+	font-size: 0.85em;
+	padding: 4px 0px;
+}
+
+
+.blocHeader nav .accueil:hover, .blocHeader nav .rechercheAvancee:hover, .blocHeader nav .contact:hover {
+	background: #FEBC98;
+	color: #424862;
+	box-shadow: 0px 0px 10px black;
+}
+
+header h1 {
+	font-size: 1.7em;
+	margin: 0px;
+	font-weight: normal;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+
+/* ------- Form -------- */
+
+
+.form_advanced_search {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	background: #F6FBF4;
+	padding-bottom: 10px;
+	transition: all linear 1000ms;
+}
+
+.form_advanced_search:hover {
+	box-shadow: 0px 0px 20px #BFC4D5;
+}
+
+.selectNeed {
+	display: flex;
+}
+
+.indifferent {
+	width: 24%;
+	border: 3px solid #FB9A63;
+	padding: 10px;
+	background: #424862;
+	color: white;
+	font-weight: bold;
+}
+
+.categoryNeed {
+	background: #424862;
+	border: 3px solid #FB9A63;
+	width: 24%;
+	padding: 10px;
+	position: relative;
+	color: white;
+	font-weight: bold;
+}
+
+.specificNeed {
+	border: 1px solid red;
+	position: absolute;
+	top: 45px;
+	left: -1px;
+	background: #424862;
+	width: 100%;
+	min-width: 100px;
+}
+
+.specificNeed input[type="checkbox"] {
+	margin: 12px 20px;
+}
+
+.regionSelection {
+	min-width: 420px;
+	width: 42%;
+	padding: 0px;
+	background: #F6FBF4;
+	color: #424862;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	transition: all linear 300ms;
+	padding-left: 10px;
+}
+
+.regionSelection label {
+	font-size: 1.8em;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.regionSelection select {
+	font-size: 1.4em;
+	background: #424762;
+	color: white;
+	border: 3px #FB9A63 solid;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: all linear 300ms;
+}
+
+.regionSelection select:hover {
+	box-shadow: 0px 0px 6px black;
+}
+
+.blocForm {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.form_advanced_search button[type="submit"] {
+	padding: 4px 40px;
+	font-size: 1.7em;
+	background: #FB9A63;
+	border: #424862 solid 4px;
+	transition: all linear 300ms;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.form_advanced_search button[type="submit"]:hover {
+	background: #FEBC98;
+	border: #424862 solid 4px;
+	box-shadow: 0px 0px 6px #424862;
+}
+
+
+/* ------ Result Picture ------------ */
+
+
+#page {
+	width: 82%;
+	margin: auto;
+}
+
+.pictureResult {
+	width: 300px;
+	height: 270px;
+	margin: 14px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.picture {
+	box-shadow: 0px 0px 2px black;
+	width: 290px;
+	height: 260px;
+	margin: auto;
+	display: block;
+	margin-top: 4px;
+	transition: all linear 300ms;
+}
+
+.picture:hover {
+	box-shadow: 0px 0px 14px black;
+}
+
+.namePicture, .regionPicture, .googleMapLinkPicture {
+	transition: all linear 400ms;
+	border: 3px #FB9A63 solid;
+	background: #424862;
+	color: white;
+}
+
+.namePicture {
+	padding: 6px 12px;
+	text-align: center;
+	position: absolute;
+	left: -20px;
+	top: 10px;
+}
+
+.namePicture:hover, .regionPicture:hover, .googleMapLinkPicture:hover {
+	box-shadow: 0px 0px 6px #FB9A63;
+}
+
+.regionPicture {
+	position: absolute;
+	bottom: -24px;
+	left: -20px;
+	padding: 4px 10px;
+}
+
+.googleMapLinkPicture {
+	position: absolute;
+	bottom: -24px;
+	right: 0px;
+	padding: 4px 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.resultSearch {
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	// box-shadow: 0px 0px 10px #AFAFAF;
+	transition: all linear 1000ms;
+}
+
+.resultSearch:hover {
+	box-shadow: 0px 0px 20px black;
+}
+
+
+/* --------- CSS ( footer.php ) ---------- */
+
+
+footer {
+	background: #424862;
+	padding: 20px 0px;
+	margin-top: 25px;
+	background: #;
+	color: white;
+	padding-bottom: 26px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+footer .team {
+	width: 30%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 2px;
+}
+
+footer .team span {
+	display: block;
+	width: 160px;
+	font-size: 0.8em;
+	margin: 6px 0px;
+}
+
+@media all and (min-width: 800px) and (max-width: 1390px) {
+	.regionSelection {
+		width: 42%;
+		padding: 0px;
+		background: #F6FBF4;
+		color: #424862;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		transition: all linear 300ms;
+		padding-left: 10px;
+	}
+
+	.regionSelection label {
+		font-size: 1.4em;
+		margin-right: 10px;
+		font-weight: bold;
+	}
+
+	.regionSelection select {
+		font-size: 1.2em;
+		background: #424762;
+		color: white;
+		border: 3px #FB9A63 solid;
+		padding: 10px;
+		outline: none;
+		cursor: pointer;
+		transition: all linear 300ms;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 800px) {
+	.regionSelection {
+		min-width: 410px;
+	}
+
+	.regionSelection label {
+		font-size: 1.4em;
+	}
+
+	.regionSelection select {
+		font-size: 1.2em;
+	}
+
+	.blocForm {
+		display: flex;
+		flex-direction: column;
+	}
+
+        .blocHeader nav {
+                display: block;
+        }
+
+        .blocHeader nav .accueil, .blocHeader nav .rechercheAvancee, .blocHeader nav .contact {
+                width: 80%;
+                margin-bottom: 10px;
+                min-width: 94px;
+        }
+
+	.labelCategoryNeed {
+		font-size: 0.8em;
+	}
+
+	label[for="indiferent"] {
+		font-size: 0.8em;
+	}
+
+	.specificNeed label {
+		font-size: 0.9em;
+	}
+
+	.specificNeed input[type="checkbox"] {
+		margin: 12px 10px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.regionSelection {
+		min-width: 340px;
+	}
+
+	.regionSelection label {
+		font-size: 1.1em;
+	}
+
+	.regionSelection select {
+		font-size: 1em;
+	}
+
+	.blocForm {
+		display: flex;
+		flex-direction: column;
+	}
+
+        .blocHeader nav {
+                display: block;
+        }
+
+        .blocHeader nav .accueil, .blocHeader nav .rechercheAvancee, .blocHeader nav .contact {
+                width: 80%;
+                margin-bottom: 10px;
+                min-width: 94px;
+        }
+
+	.labelCategoryNeed {
+		font-size: 0.7em;
+	}
+
+	label[for="indiferent"] {
+		font-size: 0.7em;
+	}
+
+	.websiteTitle {
+		font-size: 2.4em;
+	}
+
+	.specificNeed label {
+		font-size: 0.8em;
+	}
+
+	.specificNeed input[type="checkbox"] {
+		width: 6px;
+		height: 6px;
+		margin: 12px 8px;
+	}
+}
+
+

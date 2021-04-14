@@ -1,0 +1,73 @@
+.pageContactMobile {
+	background-color: #FAF6E8;
+}
+.contactFormteaser{
+	color:  #429EF5
+}
+
+.pageContactMobile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: sans-serif;
+}
+.contactFormBox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid #F5C842;
+	width: 300px;
+	padding: 20px;
+}
+
+.itemArea{
+	display:flex;
+	justify-content: space-between;
+	width: 260px;
+	margin: 10px;
+	padding: 1px;
+	height: 30px;
+}
+
+.contactFormLabel{
+
+	margin-right: 10px;
+}
+
+.contactFormTextArea{
+	height: 70px;
+}
+
+.msgitemArea{
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+.msgSubject{
+	display: flex;
+	justify-content: space-around;
+	width: 260px;
+	margin-bottom: 10px;
+
+
+}
+
+.contactFormButton	{
+
+	height: 20px;
+
+}
+
+.thanks{
+
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+
+}
+.thanksMessage{
+	font-size: 20px;
+}
